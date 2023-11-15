@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Imprima', sans-serif;
+}
+
+/* utilities */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* font */
+h1{
+    font-size: calc(3rem + 0.3vw);
+}
+h3{
+    font-size: calc(1.5rem + 0.3vw);
+}
+
+/* styles */
+.header{
+    padding: 2rem 1rem;
+    width: 100%;
+    flex-direction: column;
+    gap: .5rem;
+   
+}
+.main{
+    
+    & .main-container{
+        width: 90%;
+        
+        flex-wrap: wrap;
+        gap: .3rem;
+        & .item{
+            padding: 1rem;
+            gap: .5rem;
+            flex-basis: 300px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #A6CF98;
+            & img{
+                width: 60%;
+            }
+        }
+    }
+}
+
